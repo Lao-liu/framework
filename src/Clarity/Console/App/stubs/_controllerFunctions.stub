@@ -1,16 +1,16 @@
-    public function indexAction()
+    public function index()
     {
         return View::make('{controllerName}.index');
     }
 
-    public function storeAction()
+    public function store()
     {
         if ( Request::isPost() ) {
             // do some stuff ...
         }
     }
 
-    public function showAction($id)
+    public function show($id)
     {
         return View::make('{controllerName}.show')
             ->with('id' => $id)
@@ -20,14 +20,14 @@
             ]);
     }
 
-    public function updateAction($id)
+    public function update($id)
     {
         if ( Request::isPost() ) {
             // do some stuff ...
         }
     }
 
-    public function deleteAction($id)
+    public function delete($id)
     {
         if ( Request::isPost() && Request::isAjax() ) {
             // do some stuff ...
